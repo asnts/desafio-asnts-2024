@@ -26,7 +26,7 @@ class RecintosZoo {
     }
 
         analisaRecintos(animal, quantidade){
-            if(!this.animal[animal]){
+            if(!this.animais[animal]){
                 return {erro: "Animal inválido"}
             }
             if(quantidade <= 0 || !Number.isInteger(quantidade)){
@@ -84,11 +84,17 @@ class RecintosZoo {
         
         }
 
+          //const recintosZoo = new RecintosZoo();
+          //const resultado = recintosZoo.analisaRecintos('macaco', 2);
+          //console.log(resultado);
+
+          const recintosZoo = new RecintosZoo();
+          const resultado = recintosZoo.analisaRecintos('unicornio', 2);
+          console.log(resultado);
+
     
 
-        let recintosZoo = new RecintosZoo();
-        let resultado = recintosZoo.analisaRecintos('MACACO', 2);
-        console.log(resultado);
+     
         
     
 
